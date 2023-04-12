@@ -10,3 +10,11 @@ let additionalTips = [
   "Pick up every penny you find on the ground!",
   "Don't let your partner know...",
 ];
+
+let quote = document.querySelector(".quote")
+quote.textContent = "I am very busy and important."
+
+let heading = document.querySelector("h1")
+heading.style.textDecoration = "overline"
+
+document.title = "Easy-peasy"
