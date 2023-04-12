@@ -1,8 +1,8 @@
 let pennies = 1;
 
 function handleClick() {
-  console.log("I'm just to prove it's working!");
-  // 🔺 Remember, this function is already hooked up to the button. You'll learn how to do this yourself soon! Your task is just to write the code inside this function itself.
+  pennies = pennies*2
+  document.querySelector("output").textContent = `${pennies} pennies`
 }
 
 let additionalTips = [
@@ -18,3 +18,7 @@ let heading = document.querySelector("h1")
 heading.style.textDecoration = "overline"
 
 document.title = "Easy-peasy"
+
+let newParagraph = document.createElement("p")
+newParagraph.textContent = "The penny doubler's effing amazing"
+document.querySelector("#proof-section").append(newParagraph)
